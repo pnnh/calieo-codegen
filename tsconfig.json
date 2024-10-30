@@ -15,6 +15,7 @@
     "declaration": true,
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
+    "noUncheckedIndexedAccess": true,
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "node",
@@ -28,7 +29,7 @@
     "noEmit": true,
     "emitDeclarationOnly": true,
     "allowJs": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "esModuleInterop": true,
     "strict": true,
@@ -46,12 +47,16 @@
       ]
     },
     "plugins": [
+      {
+        "name": "next"
+      }
     ]
   },
   "include": [
-    "src/**/*",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/**/*",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",

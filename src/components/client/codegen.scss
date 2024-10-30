@@ -1,0 +1,24 @@
+.codegenComponent {
+  width: 100%;
+
+  .actionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .resultContainer {
+    min-height: 400px;
+    max-height: 560px;
+    margin-top: 1rem;
+
+    code[class*="language-"] {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

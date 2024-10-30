@@ -1,0 +1,37 @@
+.navComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  min-height: 3rem;
+  max-height: 3rem;
+  border-bottom: 1px solid #f0f0f0;
+
+  .brand {
+    margin-left: 2rem;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 2rem;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 0.9rem;
+
+      &.active {
+        color: dodgerblue;
+      }
+    }
+  }
+}
